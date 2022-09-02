@@ -1,0 +1,926 @@
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../font/Raleway-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: 'Ralewaybold';
+    src: url('../font/Raleway-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Ralewaysemibold';
+    src: url('../font/Raleway-SemiBold.ttf');
+}
+@font-face {
+    font-family: 'Ralewaythin';
+    src: url('../font/Raleway-Thin.ttf');
+}
+
+@font-face {
+    font-family: 'Ralewaymedium';
+    src: url('../font/Raleway-Medium.ttf');
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.fa-star{
+    font-size: 12px;
+}
+
+.bleu{
+    color: #0065FC;
+}
+
+.grey{
+    color:rgb(217, 217, 217);
+}
+
+body{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family:'Ralewaythin';
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0px;
+    width: 1300px;
+    margin: auto;
+    margin-bottom: 0px;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -10px;
+    padding-top: 30px;
+}
+
+header p{
+    font-family: 'Raleway';
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+body a:hover{
+    color: #0065FC;
+}
+
+header a:hover{
+    border-top: solid #0065FC 3px;
+    margin-top: -20px;
+    padding: 17px 0px 0px 0px;
+}
+
+.topmenu{
+    padding: 10px 0px 0px 0px;
+    margin: 30px;
+    margin-top: 0px;
+}
+
+#logobooki{
+    width: 100px;
+    height: 50px;
+    margin-top: 5px;
+    padding: 0px;
+}
+
+main{
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 1300px;
+}
+
+H1{
+    font-family: 'Ralewaysemibold';
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 22px;
+    display: inline-block;
+    width: 100%;
+}
+
+#acch1{
+    width: 100%;
+    margin-top: 5px; 
+}
+
+form{
+    display: inline-block;
+    margin-left: 0px;
+    width: 100%;
+}
+
+.fa-location-dot{
+    float: left;
+    font-size: 18px;
+    background-color: rgb(242, 242, 242);
+    border-radius: 18px 0px 0px 18px; 
+    width: 50px;
+    height: 35px;
+    margin-top: 0px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+#destination{
+    margin-right: -4px;
+    font-weight: bold;
+    color: black;
+    padding: 0px; 
+    border: solid 2px rgb(242, 242, 242);
+    height: 45px; 
+    width: 220px;
+}
+
+.rechercher{
+    background-color: #0065FC;
+    color: white;
+    font-family: "Ralewaysemibold";
+    font-size: 18px;
+    border-radius: 0px 18px 18px 0px;
+    border: solid 2px rgb(242, 242, 242);
+    border-left: none;
+    width: 132px;
+    height: 49px;
+    cursor: pointer;
+}
+
+.recherchermini{
+    display: none;
+}
+
+input::placeholder {
+    color: black;
+    font-family: "Ralewaybold";
+    font-size: 17px;
+    padding-left: 10px;
+    opacity: 1;
+}
+
+#filtres{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin-left: 0px;
+}
+
+#filtres li{
+    display: inline;
+}
+
+#filtres li a:hover{
+    transition: transform 150ms ease-in-out;
+    transform: scale(1.1);
+    color: black;
+    background-color: white;
+    color: #0065FC;
+}
+
+
+#filtres li a:active{
+    background-color: white;
+    color: #0065FC;
+}
+
+
+#filtres li a{
+    display: inline-block;
+    font-family: 'Ralewaybold';
+    font-size: 18px;
+    border: solid 2px rgb(217, 217, 217);
+    border-radius: 30px;
+    text-align: center;
+    list-style-type: none;
+    padding-right: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+#filtres h3{
+    font-family: 'Ralewaybold';
+    font-size: 18px;
+    margin-left: 0px;
+}
+
+a:visited{
+    color: black;
+}
+
+.fa-money-bill-wave, .fa-child-reaching, .fa-heart, .fa-dog{
+    color: #0065FC;
+    background-color: rgb(221, 235, 255);
+    border-radius: 30px;
+    padding: 18px;
+    margin-left: -2px;
+    margin-top: -2px;
+    margin-bottom: -2px;
+    margin-right: 10px;
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+}
+
+h5{
+    display: inline-block;
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-family: 'Ralewaythin';
+    color: black;
+    width: 100%;
+}
+
+.fa-info{
+    color: #0065FC;
+    border: solid 1px rgb(221, 235, 255);
+    padding-top: 3px;
+    padding-right: 7px;
+    padding-left: 7px;
+    padding-bottom: 3px;
+    border-radius: 150px;
+    margin-right: 11px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.part1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+section h2{
+    font-family: 'Ralewaysemibold';
+    margin-left: 0px;
+    width: 100%;
+    font-size: 22px;
+}
+
+
+#hebmars{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 65%;
+    height: auto;
+    padding: 20px;
+    background-color: #F2F2F2;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 2%;
+}
+
+#hebmars h2{
+    width: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#hebmars img{
+    width: 236px;
+    height: 120px;
+    border-radius: 15px 15px 0px 0px;
+    margin: 0px;
+    object-fit: cover;
+}
+
+h4{
+    width: 100%;
+    font-family: 'Ralewaysemibold';
+    font-size: 18px;
+    margin-left: 0px;
+}
+
+#hebmars div{
+    display: flex;
+    justify-content: space-around;
+    width: 236px;
+    height: 189px;
+    border: solid 5px white;
+    border-radius: 20px;
+    background-color: white;
+    margin-top: 20px;
+    margin: 10px;
+    box-shadow: 1px 1px 20px rgb(220, 218, 218);
+}
+
+#hebmars h3{
+    font-family: 'Ralewaysemibold';
+    font-size: 16px;
+    margin-top: 6px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    width: 100%;
+}
+
+#hebmars p{
+    margin-top: 3px;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-bottom: 0px;
+    font-family: 'Raleway';
+}
+
+strong{
+    font-family: 'RalewaySemiBold';
+}
+
+#actmars{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#actmars div{
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px 15px 15px 15px;
+    max-width: 302px;
+}
+
+#actmars a{
+    margin: 10px 3px 10px 3px;
+}
+
+.column{
+    justify-content: space-between;
+    height: 464.51px;
+    width: 30%;
+}
+
+#actmars div h3{
+    margin-bottom: -1px;
+    display: inline;
+    font-family: 'Ralewaysemibold';
+    background-color: white;
+    padding: 15px;
+    border-radius: 0px 0px 15px 15px;
+    font-size: 16px;
+}
+
+#vieuxport, #fortdepomegues, #ilesdufrioul, #parcnationaldescalanques, #notredamedelagarde, #parclongchamp{
+    justify-content: flex-end;
+    box-shadow: 1px 1px 20px rgb(220, 218, 218);
+}
+
+#vieuxport{
+    order: 1;
+    background-image: url("../images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+    height: 444.51px;
+    background-position: 48%;
+}
+
+#fortdepomegues{
+    height: 236px;
+    order: 2;
+    background-image: url("../images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+    background-position: 60%;
+}
+
+#ilesdufrioul{
+    order: 5;
+    height: 164.1px;
+    background-image: url("../images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+    background-size: 302px 165.1px;
+}
+
+#parcnationaldescalanques{
+    order: 3;
+    height: 444.51px;
+    background-image: url("../images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+    background-size: 722.4px 482.4px;
+    background-position-x: -200px;
+    background-position-y: -20px;
+}
+
+#notredamedelagarde{
+    order: 4;
+    height: 195.12px;
+    background-image: url("../images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+    background-size: 302px;
+    background-position-x: -10px;
+    background-position-y: 0px;
+}
+
+#parclongchamp{
+    order: 6;
+    height: 209px;
+    background-image: url("../images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+    background-size: 302px 209px;
+    background-position-x: 0px;
+}
+
+#pluspop{
+    padding: 0px 30px 30px 30px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 27%;
+    height: 625px;
+    background-color: #F2F2F2;
+    margin-bottom: 20px;
+}
+
+#pluspop a:hover, #actmars a:hover, #hebmars div:hover{
+    transition: transform 150ms ease-in-out;
+    transform: scale(1.04);
+}
+
+#pluspop h2{ 
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: left;
+    margin-top: 40px;
+}
+
+#pluspop h2 .fa-star{
+    color: black;
+    float: right;
+    margin-right: 0px;
+    font-size: 20px;
+}
+
+#pluspop div{
+    max-width: 333px;
+    min-height: 134px;
+    max-height: 134px;
+    border-radius: 15px 15px 15px 15px;
+    background-color: white;
+    padding: 5px;
+    box-shadow: 1px 1px 20px rgb(181, 179, 179);
+    margin: auto;
+}
+
+#pluspop .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: 15px;
+}
+
+#pluspop img{
+    width: 35%;
+    object-fit: cover;
+    border-radius: 12px 0px 0px 12px;
+}
+
+.fastar{
+    margin-bottom: 10px;
+}
+
+#pluspop h3{
+    font-family: 'Ralewaysemibold';
+    margin-bottom: 0px;
+    font-size: 16px;
+}
+
+#pluspop p{
+    margin-top: 0px;
+    font-family: 'Raleway';
+    font-size: 15px;
+}
+
+#bleuetblanc, #AuCoeur, #LeSoleilDuMatin{
+    display: flex;
+    flex-direction: row;
+}
+
+#bleuetblanc div, #AuCoeur div, #LeSoleilDuMatin div{
+    display: flex;
+    flex-direction: column;
+    box-shadow: none;
+    width: 100%;
+    height: 100%;
+    padding: 0px 0px 0px 10px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    font-family: 'Raleway';
+    background-color: rgb(242, 242, 242);
+    width: 100%;
+    height: 225px;
+    padding: 0px;
+    margin-top: 60px;
+}
+
+.footercontent{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 1300px;
+    font-size: 15px;
+    margin-left: 20px;
+}
+
+.footercontent div{
+    display: inline-block;
+    width: 32%;
+    margin-top: 15px;
+}
+
+.footercontent li{
+    list-style-type: none;
+    margin-top: 10px;
+    margin-left: -40px;
+}
+    
+footer a{
+    color: black;
+}
+    
+    @media all and (min-width: 769px) and (max-width: 992px){
+
+    body{
+        margin: auto;
+        width: 100%;
+    }
+    
+    main{
+        max-width: 100%;
+        margin: auto;
+    }
+    
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+    }
+    
+    #logobooki{
+        width: 250px;
+        height: auto;
+    }
+    
+    header nav{
+        display: flex;
+        justify-content: space-around;
+        font-size: 20px;
+        width: 100%;
+    }
+
+    #topmenu{
+        padding: 10px 0px 10px 0px;
+        margin-bottom: 30px;
+        margin-top: 0px;
+    }
+
+    .part1{
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    header a:hover{
+        border-top: none;
+        margin-top: -20px;
+        padding: 20px 0px 0px 0px;
+    }
+    
+    H1{
+        text-align: center;
+        margin-top: 0px;
+    }
+    
+    H1 + p{
+        text-align: center;
+    }
+    
+    form{
+        display: flex;
+        justify-content: center;
+        margin: 0px;
+    }
+    
+    #filtres{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        
+    }
+
+    #filtres h3{
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    #filtres ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-left: -20px;
+    }
+    
+    #filtres li{
+        margin-bottom: 5px;
+        margin-left: 0px;
+    }
+    
+    H5{
+        text-align: center;
+        margin-bottom: 0px;
+    }
+
+    #pluspop, #hebmars, #actmars{ 
+        background-color: transparent;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 0px;
+    }
+
+    h2{
+        margin: auto;
+        margin: 30px 0px 30px 0px;
+        padding: 0px;
+        text-align: center;
+        width: 100%;
+    }
+
+    #pluspop{
+        order: 1;
+        justify-content: space-evenly;
+        height: 700px;
+        margin: auto;
+    }
+
+    #pluspop h2{
+        text-align: center;
+        margin: 20px 0px 0px 0px
+    }
+
+    #pluspop h2 .fa-star{
+        display: none;
+    }
+
+    #pluspop div{
+        max-width: 650px;
+        min-height: 134px;
+        max-height: 134px;
+    }
+    
+    #hebmars{
+        order: 2;
+        max-width: 100%;
+        margin: auto;
+    }
+    
+    #actmars{ 
+        order: 3;
+        flex-wrap: wrap;
+    }
+
+    .column{
+        justify-content: space-between;
+        width: 35%;
+    }
+
+    footer{
+        height: auto;
+    }
+    
+    .footercontent{
+        justify-content: space-around;
+    }
+    }
+
+        @media screen and (max-width: 768px){
+
+        .rechercher{ 
+            display: none;
+        }
+    
+        #formulaire{
+            display: inline;
+            margin: auto;
+        }
+    
+        .recherchermini{
+            display: inline;
+            margin-top:0px;
+            margin-left: -12px;
+            background-color: #0065FC;
+            color: white;
+            padding: 15px;
+            border-radius: 15px;
+            border: none;
+            cursor: pointer;
+        }
+    
+        main{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+    
+        #logobooki{
+            display: inline-block;
+            width: 100px;
+            margin: auto;
+            margin-top: 20px;
+        }
+    
+        header{
+            flex-direction: column;
+            width: 100%;
+            text-align: center;
+        }
+    
+        header nav{
+            width: 100%;
+            margin-left: 0px;
+            margin-top: 0px;
+        }
+    
+        header a:hover{
+            border-top: none;
+            border-bottom: solid 3px #0065FC;
+            margin-top: -17px;
+        }
+    
+        header a{
+            width: 100%;
+            border-bottom: solid 3px #F2F2F2;
+        }
+    
+        H1{
+            width: 100%;
+            font-size: 22px;
+            margin-top: 40px;
+        }
+
+        #acch1{
+            margin-top: 14px;
+            margin-bottom: 35px;
+        }
+        
+        #filtres{
+            margin-left: -40px;
+        }
+        
+        #filtres h3{
+            display: inline-block;
+            font-family: 'Ralewaybold';
+            font-size: 18px;
+            width: 100%;
+            margin-left: 45px;
+            margin-bottom: 0px;
+        }
+        
+        #filtres li{
+            font-size: 16px;
+        }
+        
+        section{
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+
+        #pluspop{
+            width: 100%;
+            border-radius: 0px;
+            margin-left: -20px;
+            padding: 0px 20px 30px 20px;
+            padding-top: 0px;
+        }
+
+        #pluspop div{
+            max-width: 90%;
+            min-height: 134px;
+            max-height: 134px;
+            margin: auto;
+        }
+
+        #pluspop h2{
+            margin-bottom: 0px;
+        }
+
+        #hebmars{
+            order: 2;
+            max-width: 100%;
+            padding: 0px;
+            margin-right: 0%;
+            background-color: transparent;
+        }
+
+        #hebmars div{
+            width: 90%;
+            height: 189px;
+            padding: 0px;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+
+        #hebmars img{
+            width: 100%;
+            height: 120px;
+            border-radius: 15px 15px 0px 0px;
+        }
+
+        #hebmars a{
+            width: 100%;
+        }
+        
+        #actmars{
+            order: 3;
+            width: 100%;
+            padding: 0px;
+        }
+
+        #actmars a{
+            width: 90%;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+
+        H2{
+            margin-bottom: 50px;
+        }
+        
+        .column{
+            height: auto;
+            min-width: 100%;
+            justify-content: space-around;
+        }
+        
+        #vieuxport , #fortdepomegues , #ilesdufrioul , #parcnationaldescalanques , #notredamedelagarde , #parclongchamp{
+            min-width: 100%;
+            min-height: 190px;
+            max-height: 190px;
+        }
+
+        #fortdepomegues,  #ilesdufrioul, #notredamedelagarde, #parclongchamp{ 
+            background-size: 100%;
+        }
+
+        #ilesdufrioul{
+            background-position: 0px;
+        }
+        
+        #vieuxport{
+            background-size: 100%;
+            background-position: 0%;
+        }
+
+        #parcnationaldescalanques{
+            background-size: 120%;
+            background-position-y: -110px;
+            background-position-x: -30px ;
+        }
+        
+        #notredamedelagarde{
+            background-position-y: -12px ;
+            background-size: 110%;
+        }
+        
+        #parclongchamp{
+            background-position-y: -80px ;
+        }
+        
+        footer{
+            height: auto
+        }
+        
+        .footercontent{
+            flex-direction: column;
+            width: 100%;
+            padding: 20px;
+        }
+        
+        .footercontent div{
+            width: 100%;
+        }
+        
+        .footercontent li{
+            margin-bottom: 15px;
+        }
+        }
